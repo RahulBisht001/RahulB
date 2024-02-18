@@ -10,7 +10,7 @@ export default function Home() {
                     Portfolio
                 </h1>
                 <br />
-                <div className="p-4 px-6 flex h-full gap-5">
+                <div className="p-6 px-10 flex h-full gap-5">
                     <Sidebar />
                     <Content />
                 </div>
