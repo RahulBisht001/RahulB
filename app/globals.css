@@ -14,3 +14,21 @@ body {
 	background: #f2f6faff;
 	color: #000;
 }
+
+/* CSS for custom scrollbar */
+::-webkit-scrollbar {
+	width: 5px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1; /* color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+	background: #fa493297; /* color of the scrollbar thumb */
+	/* roundness of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #f44730cb; /* color of the scrollbar thumb on hover */
+}
