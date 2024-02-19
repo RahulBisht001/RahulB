@@ -35,7 +35,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="flex justify-center pb-4">
-                    <button className="bg-gradient-to-r from-yellow-500 to-orange-500 p-2 px-4 rounded-3xl text-sm text-white flex items-center gap-2">
+                    <button className="bg-gradient-to-r from-[#FF9C1A] to-[#EC1B09] p-2 px-4 rounded-3xl text-sm text-white flex items-center gap-2">
                         <MdOutlineFileDownload size={25} />
                         <span> Download Resume</span>
                     </button>

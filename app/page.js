@@ -6,7 +6,7 @@ export default function Home() {
         <>
             <div className="font-Lexend">
                 <h1 className="p-4 text-[25px] font-bold">
-                    <span className="text-orange-400">RahulB </span>
+                    <span className="text-orange-500">RahulB </span>
                     Portfolio
                 </h1>
                 <br />
