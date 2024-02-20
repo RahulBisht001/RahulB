@@ -6,7 +6,7 @@ import {Tech, Fundamentals} from "../_utils/Skills";
 const Resume = () => {
     return (
         <>
-            <div className="overflow-auto max-h-[90vh]">
+            <div className="">
                 <div className="flex items-center gap-5 sm:mx-5">
                     <h1 className="text-xl font-bold">RESUME</h1>
 
