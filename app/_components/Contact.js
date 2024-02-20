@@ -4,6 +4,21 @@ import {IoMdMail} from "react-icons/io";
 import {MdLocationPin, MdOutlineFileDownload} from "react-icons/md";
 
 const Contact = () => {
+    //* This handleDownload is different.
+    //* take it seriously
+
+    const handleDownloadResume = () => {
+        console.log("Downloading Resume");
+        const downloadUrl = "https://drive.google.com/uc?export=download&id=1cniK_Ev8WA__fk6zh5281qMbDId7805w";
+
+        // Trigger the download by creating an anchor element and clicking it programmatically
+        const link = document.createElement("a");
+        link.href = downloadUrl;
+        link.setAttribute("download", "RahulB Resume.pdf");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     return (
         <>
             <div className="bg-[#f2f6faff] rounded-xl m-4 mx-6">
@@ -35,7 +50,10 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="flex justify-center pb-4">
-                    <button className="bg-gradient-to-r from-[#FF9C1A] to-[#EC1B09] p-2 px-4 rounded-3xl text-sm text-white flex items-center gap-2">
+                    <button
+                        className="bg-gradient-to-r from-[#FF9C1A] to-[#EC1B09] p-2 px-4 rounded-3xl text-sm text-white flex items-center gap-2"
+                        onClick={handleDownloadResume}
+                    >
                         <MdOutlineFileDownload size={25} />
                         <span> Download Resume</span>
                     </button>
