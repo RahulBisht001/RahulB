@@ -16,7 +16,7 @@ const Content = () => {
         4: <Projects />,
     };
 
-    const [tab, setTab] = useState(1);
+    const [tab, setTab] = useState(0);
     return (
         <>
             <div className="w-full bg-white rounded-2xl p-4 font-Lexend">
