@@ -17,9 +17,9 @@ export default function Home() {
     const tabComponents = {
         0: <About />,
         1: <Resume />,
-        2: <Blog />,
+        2: <Projects />,
         3: <ConnectWithMe />,
-        4: <Projects />,
+        4: <Blog />,
     };
 
     const [tab, setTab] = useState(1);
