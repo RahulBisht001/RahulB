@@ -1,15 +1,16 @@
-import React, {useState} from "react";
+import React from "react";
 
-import {HiMiniDocumentText} from "react-icons/hi2";
-import {BiSolidContact} from "react-icons/bi";
-import {FaBriefcase} from "react-icons/fa6";
+import {IoDocumentText} from "react-icons/io5";
+import {IoBriefcase} from "react-icons/io5";
 import {FaBookReader} from "react-icons/fa";
+import {FaPaperPlane} from "react-icons/fa";
+import {FaNewspaper} from "react-icons/fa6";
 
 const Navbar = ({tab, setTab}) => {
     const navItems = [
         {
             id: 0,
-            icon: <HiMiniDocumentText size={15} className={`text-[#434343] ${tab === 0 ? "text-gray-100" : ""}`} />,
+            icon: <IoDocumentText size={15} className={`text-[#434343] ${tab === 0 ? "text-gray-100" : ""}`} />,
         },
         {
             id: 1,
@@ -17,11 +18,15 @@ const Navbar = ({tab, setTab}) => {
         },
         {
             id: 2,
-            icon: <FaBriefcase size={15} className={`text-[#434343] ${tab === 2 ? "text-gray-100" : ""}`} />,
+            icon: <IoBriefcase size={15} className={`text-[#434343] ${tab === 2 ? "text-gray-100" : ""}`} />,
         },
         {
             id: 3,
-            icon: <BiSolidContact size={15} className={`text-[#434343] ${tab === 3 ? "text-gray-100" : ""}`} />,
+            icon: <FaPaperPlane size={15} className={`text-[#434343] ${tab === 3 ? "text-gray-100" : ""}`} />,
+        },
+        {
+            id: 4,
+            icon: <FaNewspaper size={15} className={`text-[#434343] ${tab === 4 ? "text-gray-100" : ""}`} />,
         },
     ];
 
