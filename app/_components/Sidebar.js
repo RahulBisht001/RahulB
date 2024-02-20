@@ -14,7 +14,7 @@ const Sidebar = () => {
                         alt="RahulB Profile picture"
                         width={120}
                         height={120}
-                        className="border-4 border-orange-400 rounded-full"
+                        className="border-4 border-orange-500 rounded-full"
                     />
                 </div>
                 <h1 className="text-[20px] font-Lexend font-semibold text-center">Rahul Bisht</h1>
