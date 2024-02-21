@@ -1,8 +1,14 @@
+"use client";
 import React from "react";
 
 import {FaPaperPlane} from "react-icons/fa";
 
 const ConnectWithMe = () => {
+    const handleSendEmailButton = () => {
+        console.log("Email Sent");
+        alert("Email has been sent !");
+    };
+
     return (
         <>
             <div className="p-2">
@@ -14,17 +20,25 @@ const ConnectWithMe = () => {
                     </div>
                 </div>
 
-                <div className="sm:mx-5 my-10">
+                <div className="sm:mx-5 my-2">
                     <span className="py-2 text-sm text-gray-500">Write mail to me</span>
                     <div className="bg-[#f2f6faff] p-4 rounded-lg mt-4">
-                        <div className="flex gap-5 items-center mb-5 ">
-                            <p className="text-sm text-gray-700">Subject&nbsp; : </p>
+                        <div className="flex gap-5  mb-5 items-end">
+                            <p className="text-sm text-gray-700">Subject &nbsp; : &nbsp;&nbsp;&nbsp; </p>
                             <input
                                 type="text"
-                                className="w-1/2 p-1 border-[#f2f6faff] border-b-2 border-b-orange-200 bg-[#f2f6faff] outline-none"
+                                className="w-1/2 p-1 border-[#f2f6faff] border-b-2 border-b-orange-200 bg-[#f2f6faff] outline-none text-sm text-gray-600"
                             />
                         </div>
 
+                        <div className="flex gap-5 items-end mb-5">
+                            <p className="text-sm text-gray-700">Your Email&nbsp; : </p>
+                            <input
+                                type="email"
+                                className="w-1/2 p-1 border-[#f2f6faff] border-b-2 border-b-orange-200 bg-[#f2f6faff] outline-none text-sm text-gray-600"
+                            />
+                        </div>
+                        <br />
                         <p className="my-2 text-sm text-gray-700">Write message below !</p>
                         <textarea
                             name=""
@@ -36,7 +50,10 @@ const ConnectWithMe = () => {
                     </div>
 
                     <div className="flex justify-end">
-                        <button className="flex gap-2 items-center text-sm p-2 mt-5 text-white rounded-lg shadow-xl bg-gradient-to-r from-[#FF9C1A] to-[#f92c1a]">
+                        <button
+                            className="flex gap-2 items-center text-sm p-2 mt-5 text-white rounded-lg shadow-xl bg-gradient-to-r from-[#FF9C1A] to-[#f92c1a]"
+                            onClick={handleSendEmailButton}
+                        >
                             <FaPaperPlane size={15} />
                             Send Email
                         </button>
