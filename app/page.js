@@ -9,7 +9,8 @@ import Sidebar from "./_components/Sidebar";
 import About from "./_components/About";
 import Resume from "./_components/Resume";
 import Blog from "./_components/Blog";
-import ConnectWithMe from "./_components/ConnectWithMe";
+import Certifications from "./_components/Certifications";
+// import ConnectWithMe from "./_components/ConnectWithMe";
 import Projects from "./_components/Projects";
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
         0: <About />,
         1: <Resume />,
         2: <Projects />,
-        3: <ConnectWithMe />,
+        3: <Certifications />,
         4: <Blog />,
     };
 

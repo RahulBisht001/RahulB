@@ -3,8 +3,8 @@ import React from "react";
 import {IoDocumentText} from "react-icons/io5";
 import {IoBriefcase} from "react-icons/io5";
 import {FaBookReader} from "react-icons/fa";
-import {FaPaperPlane} from "react-icons/fa";
 import {FaNewspaper} from "react-icons/fa6";
+import {PiCertificateFill} from "react-icons/pi";
 
 const Navbar = ({tab, setTab}) => {
     const navItems = [
@@ -22,7 +22,7 @@ const Navbar = ({tab, setTab}) => {
         },
         {
             id: 3,
-            icon: <FaPaperPlane size={15} className={`text-[#434343] ${tab === 3 ? "text-gray-100" : ""}`} />,
+            icon: <PiCertificateFill size={15} className={`text-[#434343] ${tab === 3 ? "text-gray-100" : ""}`} />,
         },
         {
             id: 4,
@@ -32,7 +32,7 @@ const Navbar = ({tab, setTab}) => {
 
     return (
         <>
-            <div className="flex gap-4 p-1 px-4 rounded-xl border border-gray-200 shadow-lg">
+            <div className="flex gap-4 p-2 px-4 rounded-xl border border-gray-200 shadow-lg">
                 {navItems.map((item, idx) => {
                     return (
                         <button
