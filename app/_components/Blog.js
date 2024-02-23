@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import Blogs from "../_utils/BlogData";
+
 const Blog = () => {
     return (
         <>
@@ -23,63 +25,33 @@ const Blog = () => {
                     </button>
                 </div>
 
-                <div className="sm:mx-5 sm:gap-5 grid sm:grid-cols-3 mb-5">
-                    <div className="bg-[#e1e8efff] p-3 rounded-xl flex flex-col items-center justify-center">
-                        <Link href={"https://rahulblogs001.hashnode.dev/backend-quick-startup"} target="_blank">
-                            <Image
-                                src="/Backend.avif"
-                                alt="Backend: QuickStartUp"
-                                width={300}
-                                height={300}
-                                className="rounded-xl"
-                            />
-                        </Link>
+                <div className="overflow-y-auto max-h-[70vh]">
+                    <div className="sm:mx-5 sm:gap-5 grid sm:grid-cols-3 mb-5">
+                        {Blogs.map((blog, index) => {
+                            return (
+                                <div className="bg-[#e1e8efff] p-3 rounded-xl flex flex-col items-center justify-center">
+                                    <Link href={blog.link} target="_blank">
+                                        <Image
+                                            src={blog.image}
+                                            alt={blog.title}
+                                            width={300}
+                                            height={300}
+                                            className="rounded-xl"
+                                        />
+                                    </Link>
 
-                        <span className="text-sm text-gray-700 text-center mt-5">Backend: QuickStartUp</span>
-                    </div>
-                    <div className="bg-[#ffe3bfff] p-3 rounded-xl flex flex-col items-center justify-center">
-                        <Link href={"https://rahulblogs001.hashnode.dev/cross-origin-resource-sharing"} target="_blank">
-                            <Image
-                                src="/Cors.avif"
-                                alt="Cross Origin Resource Sharing"
-                                width={300}
-                                height={300}
-                                className="rounded-xl"
-                            />
-                        </Link>
-
-                        <span className="text-sm text-gray-700 text-center mt-5">Cross Origin Resource Sharing</span>
-                    </div>
-                    <div className="bg-[#e1e8efff] p-3 rounded-xl flex flex-col items-center justify-center">
-                        <Link
-                            href={
-                                "https://rahulblogs001.hashnode.dev/boost-your-web-development-efficiency-5-advantages-of-scss-over-plain-css"
-                            }
-                            target="_blank"
-                        >
-                            <Image
-                                src="/Scss.avif"
-                                alt="Boost your web development efficiency with scss"
-                                width={300}
-                                height={300}
-                                className="rounded-xl"
-                            />
-                        </Link>
-
-                        <span className="text-sm text-gray-700 text-center mt-5">Advantages of Using SCSS</span>
-                    </div>
-                    <div className="bg-[#ffe3bfff] p-3 rounded-xl flex flex-col items-center justify-center">
-                        <Link href={"https://rahulblogs001.hashnode.dev/event-handling-in-react"} target="_blank">
-                            <Image
-                                src="/Event.avif"
-                                alt="Event handling in react"
-                                width={300}
-                                height={300}
-                                className="rounded-xl"
-                            />
-                        </Link>
-
-                        <span className="text-sm text-gray-700 text-center mt-5">Event handling in React.js</span>
+                                    <span className="text-sm text-gray-800 text-center mt-5">{blog.title}</span>
+                                    <div className="flex justify-between gap-4">
+                                        <span className="text-[10px] text-gray-700 text-center mt-1 p-2 bg-[#ffe3bfff] rounded-lg">
+                                            {blog.time}
+                                        </span>
+                                        <p className="text-[10px] text-gray-700 text-center mt-1 p-2 bg-[#ffe3bfff] rounded-lg">
+                                            {blog.date}
+                                        </p>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </div>
