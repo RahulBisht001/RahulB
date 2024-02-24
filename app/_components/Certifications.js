@@ -8,7 +8,7 @@ import CertificationDetails from "../_utils/CertificationDetail";
 const Certifications = () => {
     return (
         <>
-            <div className="p-2">
+            <div className="sm:p-2">
                 <div className="flex items-center gap-5 sm:mx-5">
                     <h1 className="text-xl font-bold">CERTIFICATIONS</h1>
 
@@ -17,8 +17,8 @@ const Certifications = () => {
                     </div>
                 </div>
 
-                <div className="overflow-y-auto max-h-[80vh]">
-                    <div className="sm:mx-5 mt-5 grid grid-cols-2 auto-rows-fr gap-5">
+                <div className="sm:overflow-y-auto sm:max-h-[80vh]">
+                    <div className="sm:mx-5 mt-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
                         {CertificationDetails.map((certificate, index) => {
                             return (
                                 <Link
@@ -35,7 +35,7 @@ const Certifications = () => {
                                             height={100}
                                             className="rounded-md"
                                         />
-                                        <p className="text-gray-900 text-md text-center font-semibold">
+                                        <p className="text-gray-900 text-sm sm:text-md text-center font-semibold">
                                             {certificate.title}
                                         </p>
                                     </div>

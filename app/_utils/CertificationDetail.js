@@ -31,10 +31,6 @@ const CertificationDetails = [
 
         skills: [
             {
-                id: 0,
-                name: "Javascript",
-            },
-            {
                 id: 1,
                 name: "React.js",
             },
@@ -57,16 +53,16 @@ const CertificationDetails = [
 
         skills: [
             {
-                id: 0,
-                name: "Problem-Solving",
+                id: 2,
+                name: "Data Structures",
             },
             {
                 id: 1,
                 name: "Java",
             },
             {
-                id: 2,
-                name: "Data Structures and Algorithms",
+                id: 0,
+                name: "Problem-Solving",
             },
         ],
     },
@@ -84,7 +80,7 @@ const CertificationDetails = [
             },
             {
                 id: 2,
-                name: "Data Structures and Algorithms",
+                name: "Algorithms",
             },
             {
                 id: 1,
