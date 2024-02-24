@@ -33,7 +33,7 @@ const Projects = () => {
                 </div>
 
                 <div className="sm:mx-5 mt-5">
-                    <ul className="text-sm text-gray-800 flex gap-5 cursor-pointer">
+                    <ul className="text-sm text-gray-800 flex flex-col sm:flex-row gap-5 cursor-pointer">
                         {domains.map((domain) => {
                             return (
                                 <li
@@ -54,54 +54,56 @@ const Projects = () => {
 
                 <br />
 
-                <div className="sm:mx-5 overflow-y-auto max-h-[70vh]">
-                    <div className="sm:gap-5 grid sm:grid-cols-3 mb-5">
-                        {filteredProjects.map((project, index) => {
-                            return (
-                                <div
-                                    key={index}
-                                    className="bg-[#e1e8efff] p-3 rounded-xl flex flex-col items-center justify-center"
-                                >
-                                    <Image
-                                        src={project.imageUrl}
-                                        alt={project.title}
-                                        width={300}
-                                        height={300}
-                                        className="rounded-xl"
-                                    />
+                <div className="sm:overflow-y-auto sm:max-h-[70vh]">
+                    <div className="sm:mx-5 ">
+                        <div className="sm:gap-5 grid sm:grid-cols-3 mb-5">
+                            {filteredProjects.map((project, index) => {
+                                return (
+                                    <div
+                                        key={index}
+                                        className="bg-[#e1e8efff] p-3 rounded-xl flex flex-col items-center justify-center mb-5 sm:mb-0"
+                                    >
+                                        <Image
+                                            src={project.imageUrl}
+                                            alt={project.title}
+                                            width={300}
+                                            height={300}
+                                            className="rounded-xl"
+                                        />
 
-                                    <span className="text-sm text-gray-700 text-center my-3 font-bold">
-                                        {project.title}
-                                    </span>
+                                        <span className="text-sm text-gray-700 text-center my-3 font-bold">
+                                            {project.title}
+                                        </span>
 
-                                    <p className="text-xs text-gray-500 text-justify px-2">{project.description}</p>
+                                        <p className="text-xs text-gray-500 text-justify px-2">{project.description}</p>
 
-                                    <div className="w-full flex justify-evenly mt-5">
-                                        {project.liveLink ? (
+                                        <div className="w-full flex justify-evenly mt-5">
+                                            {project.liveLink ? (
+                                                <button
+                                                    className="text-xs p-2 bg-[#ffe3bfff] rounded-lg shadow-md flex items-center gap-3"
+                                                    onClick={() => handleLink(project.liveLink)}
+                                                >
+                                                    <FaLink size={15} className="text-gray-800" />
+                                                    Go Live
+                                                </button>
+                                            ) : (
+                                                <button className="text-xs p-2 bg-[#ffe3bfff] rounded-lg shadow-md flex items-center gap-3 cursor-default">
+                                                    Not Available
+                                                </button>
+                                            )}
+
                                             <button
-                                                className="text-xs p-2 bg-[#ffe3bfff] rounded-lg shadow-md flex items-center gap-3"
-                                                onClick={() => handleLink(project.liveLink)}
+                                                className="text-xs p-2 bg-[#00000079] rounded-lg shadow-md flex items-center gap-3"
+                                                onClick={() => handleLink(project.githubLink)}
                                             >
-                                                <FaLink size={15} className="text-gray-800" />
-                                                Go Live
+                                                <FaGithub size={15} className="text-gray-800" />
+                                                Github
                                             </button>
-                                        ) : (
-                                            <button className="text-xs p-2 bg-[#ffe3bfff] rounded-lg shadow-md flex items-center gap-3 cursor-default">
-                                                Not Available
-                                            </button>
-                                        )}
-
-                                        <button
-                                            className="text-xs p-2 bg-[#00000079] rounded-lg shadow-md flex items-center gap-3"
-                                            onClick={() => handleLink(project.githubLink)}
-                                        >
-                                            <FaGithub size={15} className="text-gray-800" />
-                                            Github
-                                        </button>
+                                        </div>
                                     </div>
-                                </div>
-                            );
-                        })}
+                                );
+                            })}
+                        </div>
                     </div>
                 </div>
             </div>

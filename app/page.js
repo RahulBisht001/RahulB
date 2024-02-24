@@ -11,6 +11,8 @@ import Resume from "./_components/Resume";
 import Blog from "./_components/Blog";
 import Certifications from "./_components/Certifications";
 import Projects from "./_components/Projects";
+import {GiHamburgerMenu} from "react-icons/gi";
+import MobileMenu from "./_components/MobileMenu";
 
 export default function Home() {
     // Map tab index to corresponding component
@@ -22,19 +24,44 @@ export default function Home() {
         4: <Blog />,
     };
 
-    const [tab, setTab] = useState(1);
-    // Initialize with the default tab
+    const [tab, setTab] = useState(1); // Initialize with the default tab
+
+    const [showNavbar, setShowNavbar] = useState(true); // Initially show navbar on larger screens
+
+    // Function to toggle navbar visibility on smaller screens
+    const toggleNavbar = () => {
+        // alert("Hi Rahul");
+        setShowNavbar(!showNavbar);
+    };
 
     return (
         <>
             <div className="font-Lexend">
-                <div className="flex sm:items-center sm:justify-between sm:mx-20">
-                    <h1 className="p-4 text-[25px] font-bold">
+                <div className="flex sm:items-center justify-center sm:justify-between sm:mx-20 mx-5">
+                    <h1 className="p-4 pl-0 text-[25px] font-bold">
                         <span className="text-orange-500">RahulB </span>
                         <span className="text-gray-500">Portfolio </span>
                     </h1>
 
-                    <Navbar tab={tab} setTab={setTab} />
+                    {/* Show hamburger menu only on smaller screens */}
+                    <div className="sm:hidden">
+                        {showNavbar ? (
+                            <>
+                                <MobileMenu tab={tab} setTab={setTab} />
+                            </>
+                        ) : (
+                            <GiHamburgerMenu
+                                size={30}
+                                className="text-gray-800 cursor-pointer"
+                                onClick={toggleNavbar}
+                            />
+                        )}
+                    </div>
+
+                    {/* Show navbar on larger screens */}
+                    <div className="hidden sm:flex">
+                        <Navbar tab={tab} setTab={setTab} />
+                    </div>
                 </div>
 
                 <br />
