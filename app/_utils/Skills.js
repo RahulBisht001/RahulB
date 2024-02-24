@@ -9,7 +9,7 @@ const Tech = [
     },
     {
         id: 3,
-        skill: "React.js",
+        skill: "React",
     },
     {
         id: 4,
@@ -36,8 +36,12 @@ const Tech = [
         skill: "Javascript",
     },
     {
+        id: 14,
+        skill: "SQL / Oracle",
+    },
+    {
         id: 10,
-        skill: "SQL",
+        skill: "Machine Learning",
     },
     {
         id: 11,
@@ -45,7 +49,7 @@ const Tech = [
     },
     {
         id: 12,
-        skill: "Machine Learning",
+        skill: "Git / Github",
     },
     {
         id: 13,
@@ -56,11 +60,11 @@ const Tech = [
 const Fundamentals = [
     {
         id: 1,
-        skill: "Object Oriented Programming",
+        skill: "Object Oriented Programming (OOP)",
     },
     {
         id: 2,
-        skill: "Database Management System",
+        skill: "Operating Systems",
     },
     {
         id: 4,
@@ -68,11 +72,11 @@ const Fundamentals = [
     },
     {
         id: 3,
-        skill: "Operating Systems",
+        skill: "Database Management System",
     },
     {
         id: 5,
-        skill: "Low Level Design",
+        skill: "System Design",
     },
 ];
 

@@ -10,29 +10,29 @@ const Navbar = ({tab, setTab}) => {
     const navItems = [
         {
             id: 0,
-            icon: <IoDocumentText size={15} className={`text-[#434343] ${tab === 0 ? "text-gray-100" : ""}`} />,
+            icon: <IoDocumentText size={15} className={`${tab === 0 ? "text-gray-100" : "text-[#434343]"}`} />,
         },
         {
             id: 1,
-            icon: <FaBookReader size={15} className={`text-[#434343] ${tab === 1 ? "text-gray-100" : ""}`} />,
+            icon: <FaBookReader size={15} className={`${tab === 1 ? "text-gray-100" : "text-[#434343]"}`} />,
         },
         {
             id: 2,
-            icon: <IoBriefcase size={15} className={`text-[#434343] ${tab === 2 ? "text-gray-100" : ""}`} />,
+            icon: <IoBriefcase size={15} className={`${tab === 2 ? "text-gray-100" : "text-[#434343] "}`} />,
         },
         {
             id: 3,
-            icon: <PiCertificateFill size={15} className={`text-[#434343] ${tab === 3 ? "text-gray-100" : ""}`} />,
+            icon: <PiCertificateFill size={15} className={` ${tab === 3 ? "text-gray-100" : "text-[#434343]"}`} />,
         },
         {
             id: 4,
-            icon: <FaNewspaper size={15} className={`text-[#434343] ${tab === 4 ? "text-gray-100" : ""}`} />,
+            icon: <FaNewspaper size={15} className={` ${tab === 4 ? "text-gray-100" : "text-[#434343]"}`} />,
         },
     ];
 
     return (
         <>
-            <div className="flex gap-4 p-2 px-4 rounded-xl border border-gray-200 shadow-lg">
+            <div className="hidden sm:flex gap-4 p-2 px-4 rounded-xl border border-gray-200 shadow-lg">
                 {navItems.map((item, idx) => {
                     return (
                         <button
