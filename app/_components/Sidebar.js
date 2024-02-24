@@ -12,8 +12,8 @@ const Sidebar = () => {
                     <Image
                         src="/RahulB.png"
                         alt="RahulB Profile picture"
-                        width={120}
-                        height={120}
+                        width={140}
+                        height={140}
                         className="border-4 border-orange-500 rounded-full"
                     />
                 </div>

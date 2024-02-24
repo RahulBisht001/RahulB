@@ -6,7 +6,7 @@ import {FaBookReader} from "react-icons/fa";
 import {FaNewspaper} from "react-icons/fa6";
 import {PiCertificateFill} from "react-icons/pi";
 
-const Navbar = ({tab, setTab}) => {
+const MobileMenu = ({tab, setTab}) => {
     const navItems = [
         {
             id: 0,
@@ -29,10 +29,9 @@ const Navbar = ({tab, setTab}) => {
             icon: <FaNewspaper size={15} className={` ${tab === 4 ? "text-gray-100" : "text-[#434343]"}`} />,
         },
     ];
-
     return (
         <>
-            <div className="flex gap-4 p-2 px-4 rounded-xl border border-gray-200 shadow-lg">
+            <div className="fixed bottom-0 left-9 flex gap-4 p-2 px-4 rounded-xl border border-gray-200 shadow-lg bg-[#000080e2]">
                 {navItems.map((item, idx) => {
                     return (
                         <button
@@ -53,4 +52,4 @@ const Navbar = ({tab, setTab}) => {
     );
 };
 
-export default Navbar;
+export default MobileMenu;
