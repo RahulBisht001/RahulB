@@ -10,7 +10,6 @@ import About from "./_components/About";
 import Resume from "./_components/Resume";
 import Blog from "./_components/Blog";
 import Certifications from "./_components/Certifications";
-// import ConnectWithMe from "./_components/ConnectWithMe";
 import Projects from "./_components/Projects";
 
 export default function Home() {
@@ -24,14 +23,15 @@ export default function Home() {
     };
 
     const [tab, setTab] = useState(1);
+    // Initialize with the default tab
 
     return (
         <>
             <div className="font-Lexend">
-                <div className="flex items-center justify-between mx-20 mt-1">
+                <div className="flex sm:items-center sm:justify-between sm:mx-20">
                     <h1 className="p-4 text-[25px] font-bold">
                         <span className="text-orange-500">RahulB </span>
-                        Portfolio
+                        <span className="text-gray-500">Portfolio </span>
                     </h1>
 
                     <Navbar tab={tab} setTab={setTab} />
@@ -39,7 +39,7 @@ export default function Home() {
 
                 <br />
 
-                <div className="p-6 px-10 pt-2 flex h-full gap-5">
+                <div className="p-6 px-4 sm:px-10 pt-2 flex flex-col sm:flex-row h-full gap-5">
                     <Sidebar />
                     <Content tabComponents={tabComponents} tab={tab} setTab={setTab} />
                 </div>

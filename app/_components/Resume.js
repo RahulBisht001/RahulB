@@ -7,7 +7,7 @@ const Resume = () => {
     return (
         <>
             <div className="">
-                <div className="flex items-center gap-5 sm:mx-5">
+                <div className="flex items-center gap-5 sm:mx-5 mb-2">
                     <h1 className="text-xl font-bold">RESUME</h1>
 
                     <div className="w-[20%] h-1 bg-gray-200 rounded-xl">
@@ -16,7 +16,7 @@ const Resume = () => {
                 </div>
 
                 <div className="mb-10">
-                    <div className="sm:m-5 sm:gap-2 flex items-start">
+                    <div className="m-2 ml-[-5px] sm:m-5 sm:gap-2 flex items-start">
                         <FaBookReader size={35} className="text-[#f92c1a] bg-[#e1e9f0ff] p-2 rounded-lg" />
 
                         <h2 className="font-bold text-lg px-3">Education</h2>
@@ -54,8 +54,8 @@ const Resume = () => {
                     </div>
                 </div>
 
-                <div className="sm:m-5 flex sm:gap-2">
-                    <div className="w-1/2">
+                <div className="sm:m-5 flex flex-col sm:flex-row sm:gap-2">
+                    <div className="sm:w-1/2 mb-5 sm:mb-0">
                         <h2 className="font-semibold text-md px-3 mb-3">Technical Skills</h2>
 
                         <div>
@@ -69,9 +69,9 @@ const Resume = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="w-1/2">
+                    <div className="sm:w-1/2">
                         <h2 className="font-semibold text-md px-3 mb-3">CS Fundamentals</h2>
-                        <div>
+                        <div className="">
                             {Fundamentals.map((item) => (
                                 <span
                                     key={item.id}
