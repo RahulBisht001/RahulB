@@ -31,7 +31,8 @@ const MobileMenu = ({tab, setTab}) => {
     ];
     return (
         <>
-            <div className="fixed bottom-0 left-9 flex gap-4 p-2 px-4 rounded-xl border border-gray-200 shadow-lg bg-[#000080e2]">
+            {/* <div className="fixed bottom-0 left-9 flex gap-4 p-2 px-4 rounded-xl border border-gray-200 shadow-lg bg-[#000080e2]"> */}
+            <div className="fixed bottom-0 left-0 right-0 gap-4 flex justify-center p-2 px-4 rounded-xl border border-gray-200 shadow-lg bg-[#000080e2]">
                 {navItems.map((item, idx) => {
                     return (
                         <button

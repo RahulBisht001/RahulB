@@ -24,7 +24,7 @@ export default function Home() {
         4: <Blog />,
     };
 
-    const [tab, setTab] = useState(1); // Initialize with the default tab
+    const [tab, setTab] = useState(0); // Initialize with the default tab
 
     const [showNavbar, setShowNavbar] = useState(true); // Initially show navbar on larger screens
 
