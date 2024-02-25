@@ -17,7 +17,7 @@ const Certifications = () => {
                     </div>
                 </div>
 
-                <div className="sm:overflow-y-auto sm:max-h-[80vh]">
+                <div className="sm:overflow-y-auto sm:max-h-[80vh] mb-10">
                     <div className="sm:mx-5 mt-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
                         {CertificationDetails.map((certificate, index) => {
                             return (
