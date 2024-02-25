@@ -1,6 +1,7 @@
 "use client";
 
 import React, {useState} from "react";
+import Link from "next/link";
 
 import Content from "./_components/Content";
 import Navbar from "./_components/Navbar";
@@ -13,6 +14,8 @@ import Certifications from "./_components/Certifications";
 import Projects from "./_components/Projects";
 import {GiHamburgerMenu} from "react-icons/gi";
 import MobileMenu from "./_components/MobileMenu";
+
+import {TbCode} from "react-icons/tb";
 
 export default function Home() {
     // Map tab index to corresponding component
@@ -37,10 +40,16 @@ export default function Home() {
     return (
         <>
             <div className="font-Lexend">
-                <div className="flex sm:items-center justify-center sm:justify-between sm:mx-20 mx-5">
+                <div className="flex items-center justify-between sm:mx-20 mx-5">
                     <h1 className="p-4 pl-0 text-[25px] font-bold">
-                        <span className="text-orange-500">RahulB </span>
-                        <span className="text-gray-500">Portfolio </span>
+                        <div className="hidden md:block">
+                            <span className="text-orange-400">RahulB </span>
+                            <span className="text-gray-500">Portfolio </span>
+                        </div>
+                        <div className="md:hidden">
+                            <span className="text-orange-400">Rahul</span>
+                            <span className="text-gray-500">B</span>
+                        </div>
                     </h1>
 
                     {/* Show hamburger menu only on smaller screens */}
@@ -56,6 +65,10 @@ export default function Home() {
                                 onClick={toggleNavbar}
                             />
                         )}
+
+                        <Link href="https://linktr.ee/rahulb_001" target="_blank">
+                            <TbCode size={30} className=" cursor-pointer text-orange-500" />
+                        </Link>
                     </div>
 
                     {/* Show navbar on larger screens */}
