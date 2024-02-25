@@ -24,7 +24,7 @@ const About = () => {
                     </p>
                 </div>
 
-                <div className="sm:mx-5">
+                <div className="sm:mx-5 mb-10">
                     <h2 className="font-semibold font-Lexend text-lg mb-4">What I Do!</h2>
 
                     <div className="grid sm:grid-cols-2 gap-5">
