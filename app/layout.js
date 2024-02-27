@@ -1,3 +1,5 @@
+import {Analytics} from "@vercel/analytics/react";
+
 import {Lexend, Poppins} from "next/font/google";
 import "./globals.css";
 
@@ -21,7 +23,10 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="en">
-            <body className={`${lexend.variable} ${poppins.variable}`}>{children}</body>
+            <body className={`${lexend.variable} ${poppins.variable}`}>
+                {children}
+                <Analytics />
+            </body>
         </html>
     );
 }
