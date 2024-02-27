@@ -14,5 +14,13 @@ The `main` branch is the actual deployment and all the updates and changes were 
   3. React icons
 . . . .
 
-Follow me on [LinkedIn](https://linkedin.com/in/RahulB001) & [ Twitter ](https://twitter.com/Twts_RahulB)
- 
+* This Portfolio includes Vercel Analytics as well.
+* Futures Updation plan
+  1. Build a CRM for this Project
+  2. In-built Blogging Section
+
+
+***I Created it with this [Figma Design](https://www.figma.com/file/NgfKi5GVk4zWT97e2ZSvMg/Portfolio-Design-(Community)?type=design&mode=design&t=zmugymzFQaV2JasZ-1)***
+
+
+### Follow me on [LinkedIn](https://linkedin.com/in/RahulB001) & [ Twitter ](https://twitter.com/Twts_RahulB)
