@@ -16,7 +16,7 @@ The `main` branch is the actual deployment and all the updates and changes were 
 
 * This Portfolio includes Vercel Analytics as well.
 * Futures Updation plan
-  1. Build a CRM for this Project
+  1. Build a CRM [ Strapi ]for this Project
   2. In-built Blogging Section
 
 
