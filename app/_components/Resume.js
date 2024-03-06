@@ -34,7 +34,7 @@ const Resume = () => {
                                 </div>
                                 <div className="mb-6 ml-4 mt-2">
                                     <h4 className="mb-1.5 text-md my-1 font-semibold text-[#f9461a]">
-                                        Bachelor's in Computer Science Engineering
+                                        Bachelor of Technology in Computer Science Engineering
                                     </h4>
                                     <p className="mb-4 text-xs font-normal text-gray-500">
                                         Graphic Era Hill University, Dehradun ,India
