@@ -1,9 +1,9 @@
 import {Analytics} from "@vercel/analytics/react";
 
-import {Lexend, Poppins} from "next/font/google";
+import {Lexend, Poppins, Lexend_Deca} from "next/font/google";
 import "./globals.css";
 
-const lexend = Lexend({
+const lexend = Lexend_Deca({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"],
     variable: "--font-Lexend",
