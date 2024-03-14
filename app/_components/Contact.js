@@ -9,7 +9,9 @@ const Contact = () => {
 
     const handleDownloadResume = () => {
         console.log("Downloading Resume");
-        const downloadUrl = "https://drive.google.com/uc?export=download&id=1cniK_Ev8WA__fk6zh5281qMbDId7805w";
+        // const downloadUrl = "https://drive.google.com/uc?export=download&id=1cniK_Ev8WA__fk6zh5281qMbDId7805w";
+
+        const downloadUrl = "https://drive.google.com/file/d/1AN_1R1vS1ObrafJixyYk-Ep52qWS2V3k/view?usp=sharing";
 
         // Trigger the download by creating an anchor element and clicking it programmatically
         const link = document.createElement("a");
