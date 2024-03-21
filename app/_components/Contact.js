@@ -1,6 +1,9 @@
 import React from "react";
+import Link from "next/link";
 import {FaPhoneAlt} from "react-icons/fa";
 import {IoMdMail} from "react-icons/io";
+
+import {TbCode} from "react-icons/tb";
 import {MdLocationPin, MdOutlineFileDownload} from "react-icons/md";
 
 const Contact = () => {
@@ -11,7 +14,7 @@ const Contact = () => {
         console.log("Downloading Resume");
         // const downloadUrl = "https://drive.google.com/uc?export=download&id=1cniK_Ev8WA__fk6zh5281qMbDId7805w";
 
-        const downloadUrl = "https://drive.google.com/file/d/1AN_1R1vS1ObrafJixyYk-Ep52qWS2V3k/view?usp=sharing";
+        const downloadUrl = "https://drive.google.com/file/d/1Y0GHunwNxkfFLzYjjDI15t7NRI8nSyWk/view?usp=drive_link";
 
         // Trigger the download by creating an anchor element and clicking it programmatically
         const link = document.createElement("a");
@@ -59,6 +62,19 @@ const Contact = () => {
                         <MdOutlineFileDownload size={25} />
                         <span> Download Resume</span>
                     </button>
+                </div>
+            </div>
+            <div className="hidden mt-5 mb-4 mx-6 sm:flex flex-col items-center justify-center">
+                <Link
+                    href={"https://linktr.ee/rahulb_001"}
+                    target="_blank"
+                    className="p-2 px-4 text-sm text-black flex items-center gap-2"
+                >
+                    <TbCode size={25} />
+                    <span> My Coding Profiles</span>
+                </Link>
+                <div className="w-[80%] bg-gray-200 rounded-xl">
+                    <div className="h-[2px] rounded-xl bg-gradient-to-r from-[#FF9C1A] to-[#f92c1a]"></div>
                 </div>
             </div>
         </>
