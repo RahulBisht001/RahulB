@@ -14,7 +14,9 @@ const Contact = () => {
         console.log("Downloading Resume");
         // const downloadUrl = "https://drive.google.com/uc?export=download&id=1cniK_Ev8WA__fk6zh5281qMbDId7805w";
 
-        const downloadUrl = "https://drive.google.com/file/d/1Y0GHunwNxkfFLzYjjDI15t7NRI8nSyWk/view?usp=drive_link";
+        // const downloadUrl = "https://drive.google.com/file/d/1Y0GHunwNxkfFLzYjjDI15t7NRI8nSyWk/view?usp=drive_link";
+
+        const downloadUrl = "https://drive.google.com/file/d/1RGHQ_oXHkr53JJuE9AzaOow7nGMLYYXu/view?usp=drive_link";
 
         // Trigger the download by creating an anchor element and clicking it programmatically
         const link = document.createElement("a");
