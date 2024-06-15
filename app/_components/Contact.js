@@ -16,7 +16,7 @@ const Contact = () => {
 
         // const downloadUrl = "https://drive.google.com/file/d/1Y0GHunwNxkfFLzYjjDI15t7NRI8nSyWk/view?usp=drive_link";
 
-        const downloadUrl = "https://drive.google.com/file/d/1RGHQ_oXHkr53JJuE9AzaOow7nGMLYYXu/view?usp=drive_link";
+        const downloadUrl = "https://drive.google.com/file/d/1uoHn5v4x4T52ZjtJGFqGp1luRIBi8w80/view?usp=sharing";
 
         // Trigger the download by creating an anchor element and clicking it programmatically
         const link = document.createElement("a");
