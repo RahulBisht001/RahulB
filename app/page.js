@@ -15,7 +15,9 @@ import Projects from "./_components/Projects";
 import {GiHamburgerMenu} from "react-icons/gi";
 import MobileMenu from "./_components/MobileMenu";
 
+import {SiCodeigniter} from "react-icons/si";
 import {TbCode} from "react-icons/tb";
+import MyLinks from "./_components/MyLinks";
 
 export default function Home() {
     // Map tab index to corresponding component
@@ -41,14 +43,14 @@ export default function Home() {
         <>
             <div className="font-Lexend">
                 <div className="flex items-center justify-between sm:mx-20 mx-5">
-                    <h1 className="p-4 pl-0 text-[25px] font-bold">
-                        <div className="hidden md:block">
-                            <span className="text-orange-400">RahulB </span>
-                            <span className="text-gray-500">Portfolio </span>
+                    <h1 className="p-3 pl-0 font-semibold">
+                        <div className="hidden md:block font-Outfit text-[30px]">
+                            <span className="text-orange-500">Rahul </span>
+                            <span className="text-gray-500">Bisht </span>
                         </div>
-                        <div className="md:hidden">
-                            <span className="text-orange-400">Rahul</span>
-                            <span className="text-gray-500">B</span>
+                        <div className="md:hidden font-Outfit text-[28px] ">
+                            <span className="text-orange-500">Rahul</span>
+                            <span className="text-gray-500">&nbsp;Bisht</span>
                         </div>
                     </h1>
 
@@ -66,9 +68,11 @@ export default function Home() {
                             />
                         )}
 
-                        <Link href="https://linktr.ee/rahulb_001" target="_blank">
+                        {/* <Link href="https://linktr.ee/rahulb_001" target="_blank">
                             <TbCode size={30} className=" cursor-pointer text-orange-500" />
-                        </Link>
+                        </Link> */}
+
+                        <MyLinks />
                     </div>
 
                     {/* Show navbar on larger screens */}

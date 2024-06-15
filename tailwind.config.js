@@ -9,6 +9,7 @@ module.exports = {
         fontFamily: {
             Poppins: ["var(--font-Poppins)"],
             Lexend: ["var(--font-Lexend)"],
+            Outfit: ["var(--font-Outfit)"],
         },
         extend: {
             backgroundImage: {
