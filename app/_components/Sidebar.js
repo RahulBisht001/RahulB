@@ -10,7 +10,7 @@ const Sidebar = () => {
             <div className="w-full sm:w-[30%] bg-white rounded-2xl">
                 <div className="flex justify-center mb-1 mt-[-40px]">
                     <Image
-                        src="/RahulB.png"
+                        src="/RahulB_LinkedIn.png"
                         alt="RahulB Profile picture"
                         width={140}
                         height={140}
