@@ -1,14 +1,20 @@
 const ProjectDetails = [
     {
-        title: "E-Learning Platform",
+        title: "WebTrack : Site Analytics Tool",
         category: "Web Development",
-        imageUrl: "/E-Learning.png",
-        description:
-            "Razorpay payment gateway, fully functional Admin Dashboard with authentication and authorization.",
-        liveLink: "https://e-learning-front-end-iota.vercel.app/",
-        githubLink: "https://github.com/RahulBisht001/E-Learning_FrontEnd",
+        imageUrl: "/web.png",
+        description: "Get your website's analytics in just few clicks. Create Custom events to track user behavior.",
+        liveLink: "https://webtrack.vercel.app",
+        githubLink: "https://github.com/RahulBisht001/webtrack#readme",
     },
-
+    {
+        title: "DocTalk : Chat With Your PDF",
+        category: "Machine Learning",
+        imageUrl: "/DocTalk_logo.png",
+        description: "Generative AI application ,Engage in real-time interactions based on their PDF.",
+        liveLink: "https://doctalk-byrahul.streamlit.app/",
+        githubLink: "https://github.com/RahulBisht001/DocTalk#readme",
+    },
     {
         title: "Share Market News API",
         category: "API Development",
@@ -16,6 +22,15 @@ const ProjectDetails = [
         description: "More than 1200+ News in just one click. Total 1800+ Developers used it in their project",
         liveLink: "https://rapidapi.com/RahulBisht001/api/share-market-news-api-india/",
         githubLink: "https://github.com/RahulBisht001/Share_Market_News_API",
+    },
+    {
+        title: "E-Learning Platform",
+        category: "Web Development",
+        imageUrl: "/E-Learning.png",
+        description:
+            "Razorpay payment gateway, fully functional Admin Dashboard with authentication and authorization.",
+        liveLink: "https://e-learning-front-end-iota.vercel.app/",
+        githubLink: "https://github.com/RahulBisht001/E-Learning_FrontEnd",
     },
     {
         title: "Handwritten Digit Recognizer",

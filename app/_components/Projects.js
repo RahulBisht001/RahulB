@@ -68,7 +68,7 @@ const Projects = () => {
                                             alt={project.title}
                                             width={300}
                                             height={300}
-                                            className="rounded-xl"
+                                            className="rounded-lg"
                                         />
 
                                         <span className="text-sm text-gray-700 text-center my-3 font-bold">
