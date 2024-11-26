@@ -12,16 +12,13 @@ const Contact = () => {
 
     const handleDownloadResume = () => {
         console.log("Downloading Resume");
-        // const downloadUrl = "https://drive.google.com/uc?export=download&id=1cniK_Ev8WA__fk6zh5281qMbDId7805w";
 
-        // const downloadUrl = "https://drive.google.com/file/d/1Y0GHunwNxkfFLzYjjDI15t7NRI8nSyWk/view?usp=drive_link";
-
-        const downloadUrl = "https://drive.google.com/file/d/1uoHn5v4x4T52ZjtJGFqGp1luRIBi8w80/view?usp=sharing";
+        const downloadUrl = "https://drive.google.com/file/d/1eKO7xIOrIUQVtOhKhwHi8lRnyAm--x9Z/view?usp=sharing";
 
         // Trigger the download by creating an anchor element and clicking it programmatically
         const link = document.createElement("a");
         link.href = downloadUrl;
-        link.setAttribute("download", "RahulB Resume.pdf");
+        link.setAttribute("download", "Rahul Bisht Resume.pdf");
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

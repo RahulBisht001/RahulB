@@ -1,7 +1,6 @@
 "use client";
 
 import React, {useState} from "react";
-import Link from "next/link";
 
 import Content from "./_components/Content";
 import Navbar from "./_components/Navbar";
@@ -15,8 +14,6 @@ import Projects from "./_components/Projects";
 import {GiHamburgerMenu} from "react-icons/gi";
 import MobileMenu from "./_components/MobileMenu";
 
-import {SiCodeigniter} from "react-icons/si";
-import {TbCode} from "react-icons/tb";
 import MyLinks from "./_components/MyLinks";
 
 export default function Home() {
