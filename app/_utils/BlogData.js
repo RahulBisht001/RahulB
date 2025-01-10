@@ -1,5 +1,12 @@
 const Blogs = [
     {
+        title: "Java Garbage Collection Explained: What You Need to Know",
+        time: "7 min Read",
+        date: "Jan 10 2025",
+        image: "/Java_GC.jpg",
+        link: "https://rahulblogs001.hashnode.dev/java-garbage-collection-explained-what-you-need-to-know",
+    },
+    {
         title: "Backend: QuickStartUp",
         time: "4 min Read",
         date: "Feb 21 2024",
