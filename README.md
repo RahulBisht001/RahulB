@@ -71,7 +71,7 @@ The `main` branch is the actual deployment and all the updates and changes were 
 ```
 
 
-***I Created it with this [Figma Design](https://www.figma.com/file/NgfKi5GVk4zWT97e2ZSvMg/Portfolio-Design-(Community)?type=design&mode=design&t=zmugymzFQaV2JasZ-1)***
+*I Created it with this [Figma Design](https://www.figma.com/file/NgfKi5GVk4zWT97e2ZSvMg/Portfolio-Design-(Community)?type=design&mode=design&t=zmugymzFQaV2JasZ-1)*
 
 
 ### Follow me on [LinkedIn](https://linkedin.com/in/RahulB001) & [ Twitter ](https://twitter.com/Twts_RahulB)
