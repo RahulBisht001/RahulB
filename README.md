@@ -1,7 +1,5 @@
 # **RahulB Portfolio**
 
-Check out the Progress [here](https://rahulb-portfolio.vercel.app/)
-
 * Here I created two Branches
   1. Main
   2. Development
