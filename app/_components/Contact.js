@@ -40,7 +40,7 @@ const Contact = () => {
                         <IoMdMail size={20} className="text-orange-500" />
                         <div className="text-start">
                             <p className="text-xs text-gray-500">Email</p>
-                            <span className="text-xs">rahulbisht1012@gmail.com</span>
+                            <span className="text-xs">developer.rahulb@gmail.com</span>
                         </div>
                     </div>
                     <hr />
